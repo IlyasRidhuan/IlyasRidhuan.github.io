@@ -1,8 +1,147 @@
 doctype html
 html
     include ./includes/head.jade
+    script
+        include ./includes/index.js
     body
-        script(type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js")
-        script(type="text/javascript" src="js/materialize.min.js")
-        h1
-            |Hi my name is Ilyas Ridhuan
+    
+        header
+            nav
+                .container
+                    .navbar-wrapper
+                        a(class="brand-logo") Logo
+                        ul(class="right hide-on-med-and-down")
+                            li(class="active")
+                                a About
+                            li(class="active") 
+                                a Education
+                            li(class="active")
+                                a Experience
+                            li(class="active")
+                                a Awards
+        .parallax-container
+            .parallax
+                img(src="./images/universe.jpg")
+            h1
+                |Hi my name is Ilyas Ridhuan
+        .section.white
+            .row.container
+                h2(class="header") About
+                hr
+                .col.s6.push-s1
+                    p(class="grey-text text-darken-3 lighten-3")
+                        |Ilyas is a 24 year old computer scientist honours student at UWA and Co Founder of Veri.Vote, a startup that aims to provide a secure,verifiable and transparent electronic voting system.
+                        br
+                        |He is interested in emergent technologies and the role that it plays in solving the social and economic problems faced by industries.
+                        br
+                        |He is also passionate about startups, and this is a technology advisor for other startups at Bloom, a student-run startup that focuses on building the entrepreneurial spirit of West Australian youth.He has also beenn involved in many startup-focused events such as Startup Weekend and Unearthed.
+                .col.s4.push-s2
+                    img(class="circle responsive-img" src="./images/universe.jpg")
+        .parallax-container
+            .parallax
+                img(src="./images/grass.jpg")
+                    
+        .section.white
+            .row.container
+                h2(class="header") Experience
+                hr
+                .row.left-align
+                    h3(class="left-align") Work Experience
+                    ul(id="staggered-work")
+                        li(class="stagger")
+                            .row
+                                .col.s4
+                                    h5
+                                        b Veri.Vote
+                                    p Nov 2016 - 
+                                .col.s8
+                                    h5
+                                        strong Co Founder
+                                    p 
+                                        |Leveraging cryptographic primitives and block chain technology to build a transparent and verifiable electronic voting system.
+                        li(class="stagger")
+                            .row
+                                .col.s4
+                                    h5
+                                        b University Hall
+                                    p Dec 2014 - 
+                                .col.s8
+                                    h5
+                                        strong Residential Advisor
+                                    p 
+                                        |Tasked with promoting a harmonious, productive ,and safe living and learning community for residents living at University Hall.Often first point of contact for residents experiencing social, cultural, personal or academic issues.Ran regular floor events and floor meetings with residents to promote a sense of community and social bond.
+                        li(class="stagger")
+                            .row
+                                .col.s4
+                                    h5
+                                        b University Hall
+                                    p Dec 2014 - Nov 2015
+                                .col.s8
+                                    h5
+                                        strong Lead Academic Mentor
+                                    p 
+                                        |Led a team of 9 residential advisors in running the academic program at University Hall.Wrote the academic tutorial program for 2015 for University Hall including the interviewing and hiring of academic tutors.Coordinated new academic program initiatives such as research seminars and networking events between residents and UWA academics. 
+                        li(class="stagger")
+                            .row
+                                .col.s4
+                                    h5
+                                        b Iluka Resources
+                                    p June 2015 - July 2015
+                                .col.s8
+                                    h5
+                                        strong Contract Consultant
+                                    p 
+                                        |Tasked with looking at improved ways of simulating and predicting heavy mineral transportation and deposition.
+                        li(class="stagger")        
+                            .row
+                                .col.s4
+                                    h5
+                                        b DownUnder GeoSolutions
+                                    p Dec 2014 - Mar 2015
+                                .col.s8
+                                    h5
+                                        strong Geophysics Software Intern
+                                    p 
+                                        |Ported geophysics code from Java to C to be used for Intel's Xeon-Phi Co-processors.Had to develop an understanding of time-frequency denoising in order to port the code to C without losing efficiency.Used the Java Native Interface(JNI) to enable C code to interface with the existing java-based user front end.Used YourKit profiler to identify slow points in sections of code.
+                        li(class="stagger")                
+                            .row
+                                .col.s4
+                                    h5
+                                        b Singapore Civil Defence Force
+                                    p Aug 2010 - June 2012
+                                .col.s8
+                                    h5
+                                        strong Firefighting Section Commander
+                                    p 
+                                        |Posted to Central Fire station as a Section Commander (Sergeant).Led a team of four firefighters that responded to emergency and rescue situations.Placed in charge of fire investigation and assessment of appliance response times for the fire station.
+                                
+                                  
+                hr
+                .row
+                    h3(class="left-align") Education
+                    
+                    .row.left-align
+                        .col.s4
+                            h5
+                                b University of Western Autralia
+                            p 2016 - Current
+                        .col.s8
+                            h5
+                                strong Honours - Computer Science
+                            p 
+                                |Currently undertaking the honours program in computer science. 
+                    
+                    .row.left-align
+                        .col.s4
+                            h5
+                                b University of Western Autralia
+                            p June 2012 - Dec 2015 
+                        .col.s8
+                            h5
+                                strong Bachelor - Physics and Computer Science
+                            p 
+                                |Graduated with a double major in Physics and Computer Science
+                                
+                hr
+                
+                                
