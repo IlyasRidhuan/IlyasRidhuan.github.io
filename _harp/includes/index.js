@@ -3,6 +3,9 @@ $(document).ready(function(){
       $('.collapsible').collapsible({
       accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
     });
+     $('.scrollspy').scrollSpy();
+     $('.toc-wrapper').pushpin({ top: $('.toc-wrapper').offset().top });
+
 });
 
 var option = [
@@ -21,11 +24,14 @@ var option = [
     {selector: '#staggered-awards1', offset: 100,callback:function(){
         Materialize.showStaggeredList("#staggered-awards1")
     }},
-    {selector: '#staggered-awards2', offset: 100,callback:function(){
+    {selector: '#staggered-awards2', offset: 120,callback:function(){
         Materialize.showStaggeredList("#staggered-awards2")
     }},
-    {selector: '#staggered-awards3', offset: 100,callback:function(){
+    {selector: '#staggered-awards3', offset: 140,callback:function(){
         Materialize.showStaggeredList("#staggered-awards3")
+    }},
+    {selector: '#staggered-contacts1',offset: 50, callback:function(){
+        Materialize.showStaggeredList('#staggered-contacts1')
     }}
 ]
 Materialize.scrollFire(option);

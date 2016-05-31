@@ -4,39 +4,41 @@ html
     script
         include ./includes/index.js
     body
-    
-        header
-            nav
-                .container
-                    .navbar-wrapper
-                        a(class="brand-logo") Logo
-                        ul(class="right hide-on-med-and-down")
-                            li(class="active")
-                                a About
-                            li(class="active") 
-                                a Education
-                            li(class="active")
-                                a Experience
-                            li(class="active")
-                                a Awards
         .parallax-container
             .parallax
-                img(src="./images/universe.jpg")
-            h1
+                img(src="./images/woods.jpg")
+            h2.valign.white-text(style="margin-top:15%")
                 |Hi my name is Ilyas Ridhuan
         .section.white
-            .row.container
-                h2(class="header") About
+            .row
+                h2(class="header") Profile
                 hr
-                .col.s6.push-s1
-                    p(class="grey-text text-darken-3 lighten-3")
-                        |Ilyas is a 24 year old computer scientist honours student at UWA and Co Founder of Veri.Vote, a startup that aims to provide a secure,verifiable and transparent electronic voting system.
-                        br
-                        |He is interested in emergent technologies and the role that it plays in solving the social and economic problems faced by industries.
-                        br
-                        |He is also passionate about startups, and this is a technology advisor for other startups at Bloom, a student-run startup that focuses on building the entrepreneurial spirit of West Australian youth.He has also beenn involved in many startup-focused events such as Startup Weekend and Unearthed.
-                .col.s4.push-s2
-                    img(class="circle responsive-img" src="./images/universe.jpg")
+                .container.scrollspy(id="profile")
+                    .row.valign-wrapper
+                        .col.s6
+                            h5 About
+                            p.grey-text.text-darken-3.lighten-3.left-align
+                                |Ilyas is a 24 year old computer science honours student at UWA and Co Founder of Veri.Vote, a startup that aims to provide a secure, verifiable, and transparent electronic voting system.
+                                br
+                                br
+                                |He is interested in emergent technologies and the role that it plays in solving the social and economic problems faced by industries.
+                                br
+                                br
+                                |He is also passionate about startups, and is a technology advisor for other startups at Bloom, a student-run startup that focuses on building the entrepreneurial spirit of West Australian youth. He has also been involved in many startup-focused events such as Startup Weekend and Unearthed.
+                        .col.s4.l3.valign
+                            img(class="circle responsive-img" src="./images/face.jpg")
+                        .col.s2.push-l1
+                            .toc-wrapper.side-bar
+                                ul.section.table-of-contents
+                                    li
+                                        a(href="#profile") Profile
+                                    li 
+                                        a(href="#experience") Experience
+                                    li 
+                                        a(href="#awards") Awards  
+                                    li
+                                        a(href="#contact") Contact                  
+
         .parallax-container
             .parallax
                 img(src="./images/grass.jpg")
@@ -46,30 +48,30 @@ html
                 h2(class="header") Experience
                 hr
                 .row.left-align
-                    h3(class="left-align") Work Experience
+                    h3.left-align.scrollspy(id="experience") Work Experience
                     ul(id="staggered-work1")
                         li(class="stagger")
                             .row
                                 .col.s4
                                     h5
                                         b Veri.Vote
-                                    p Nov 2016 - 
-                                .col.s8
+                                    p Nov 2016 - Current
+                                .col.s7
                                     h5
                                         strong Co Founder
                                     p 
-                                        |Leveraging cryptographic primitives and block chain technology to build a transparent and verifiable electronic voting system.
+                                        |Veri.Vote is an electronic voting company that i leveraging cryptographic primitives and block chain technology to build a transparent and verifiable electronic voting system.
                         li(class="stagger")
                             .row
                                 .col.s4
                                     h5
                                         b University Hall
-                                    p Dec 2014 - 
-                                .col.s8
+                                    p Dec 2014 - Current
+                                .col.s7
                                     h5
                                         strong Residential Advisor
                                     p 
-                                        |Tasked with promoting a harmonious, productive ,and safe living and learning community for residents living at University Hall.Often first point of contact for residents experiencing social, cultural, personal or academic issues.Ran regular floor events and floor meetings with residents to promote a sense of community and social bond.
+                                        |Tasked with promoting a harmonious, productive, and safe living and learning community for residents living at University Hall. Often first point of contact for residents experiencing social, cultural, personal or academic issues. Ran regular floor events and floor meetings with residents to promote a sense of community and social bond.
                     ul(id="staggered-work2")
                         li(class="stagger")
                             .row
@@ -77,18 +79,18 @@ html
                                     h5
                                         b University Hall
                                     p Dec 2014 - Nov 2015
-                                .col.s8
+                                .col.s7
                                     h5
                                         strong Lead Academic Mentor
                                     p 
-                                        |Led a team of 9 residential advisors in running the academic program at University Hall.Wrote the academic tutorial program for 2015 for University Hall including the interviewing and hiring of academic tutors.Coordinated new academic program initiatives such as research seminars and networking events between residents and UWA academics. 
+                                        |Led a team of 9 residential advisors in running the academic program at University Hall. Wrote the academic tutorial program for 2015 for University Hall including the interviewing and hiring of academic tutors. Coordinated new academic program initiatives such as research seminars and networking events between residents and UWA academics. 
                         li(class="stagger")
                             .row
                                 .col.s4
                                     h5
                                         b Iluka Resources
                                     p June 2015 - July 2015
-                                .col.s8
+                                .col.s7
                                     h5
                                         strong Contract Consultant
                                     p 
@@ -100,25 +102,23 @@ html
                                     h5
                                         b DownUnder GeoSolutions
                                     p Dec 2014 - Mar 2015
-                                .col.s8
+                                .col.s7
                                     h5
                                         strong Geophysics Software Intern
                                     p 
-                                        |Ported geophysics code from Java to C to be used for Intel's Xeon-Phi Co-processors.Had to develop an understanding of time-frequency denoising in order to port the code to C without losing efficiency.Used the Java Native Interface(JNI) to enable C code to interface with the existing java-based user front end.Used YourKit profiler to identify slow points in sections of code.
+                                        |Ported geophysics code from Java to C to be used for Intel's Xeon-Phi Co-processors. Had to develop an understanding of time-frequency denoising in order to port the code to C without losing efficiency. Used the Java Native Interface(JNI) to enable C code to interface with the existing java-based user front end. Used YourKit profiler to identify slow points in sections of code.
                         li(class="stagger")                
                             .row
                                 .col.s4
                                     h5
                                         b Singapore Civil Defence Force
                                     p Aug 2010 - June 2012
-                                .col.s8
+                                .col.s7
                                     h5
                                         strong Firefighting Section Commander
                                     p 
-                                        |Posted to Central Fire station as a Section Commander (Sergeant).Led a team of four firefighters that responded to emergency and rescue situations.Placed in charge of fire investigation and assessment of appliance response times for the fire station.
-                                
-          .section.white
-            .row.container
+                                        |Posted to Central Fire station as a Section Commander (Sergeant). Led a team of four firefighters that responded to emergency and rescue situations. Placed in charge of fire investigation and assessment of appliance response times for the fire station.
+
                 .row.left-align
                     h3(class="left-align") Education
                     ul(id="staggered-education1")
@@ -128,28 +128,29 @@ html
                                     h5
                                         b University of Western Australia
                                     p 2016 - Current
-                                .col.s8
+                                .col.s7
                                     h5
                                         strong Honours - Computer Science
                                     p 
-                                        |Currently undertaking the honours program in computer science. 
+                                        |Currently undertaking the honours program in computer science. Thesis topic is based on developing a global reputation system to underpin the financial securities market.
                         li(class="stagger")
                             .row
                                 .col.s4
                                     h5
                                         b University of Western Australia
                                     p June 2012 - Dec 2015 
-                                .col.s8
+                                .col.s7
                                     h5
                                         strong Bachelor - Physics and Computer Science
                                     p 
-                                        |Graduated with a double major in Physics and Computer Science
-                                
-        .section.brown.lighten-5
+                                        |Graduated with a double major in Physics and Computer Science with a WAM of 82% and GPA of 6.5             
+        .section.white.scrollspy(id="awards")
             .row.container
+                h2(class="header") Awards & Achievements
+                hr
                 .row.left-align
-                    h3(class="left-align") Awards
-                    ul(id="staggered-awards1")
+                    h3(class="left-align")
+                    ul.accordion-box(id="staggered-awards1")
                         li(class="stagger")
                             .row
                                 .col.s6
@@ -159,11 +160,13 @@ html
                                 li
                                     .collapsible-header
                                         i.material-icons whatshot
-                                        | 1st Place Unearthed 2016
+                                        | 1st Place Unearthed Hackathon 2016
+                                        i.material-icons(style="float:right") expand_more
                                     .collapsible-body
-                                        | Part of team "Fat Controller" to solve Woodside's problem
+                                        p
+                                            |Part of team "Fat Controller" to solve Woodside's problem
                                         
-                    ul(id="staggered-awards2")  
+                    ul.accordion-box(id="staggered-awards2")  
                         li.stagger
                             .row
                                 .col.s6
@@ -173,23 +176,32 @@ html
                                 li
                                     .collapsible-header
                                         i.material-icons whatshot
-                                        | 1st Place Startup Weekend 2016
+                                        | 1st Place Startup Weekend 2015
+                                        i.material-icons(style="float:right") expand_more
                                     .collapsible-body
-                                        | Part of team Veri.Vote
+                                        p
+                                            |Awarded first place at Startup Weekend Perth for developing a secure, verifiable and transparent electronic voting system by using block chain technology pioneered by Bitcoin.
                                 li
                                     .collapsible-header
                                         i.material-icons assignment
-                                        | Cheryl Praeger Award
+                                        | Cheryl Praeger Award (University Hall)
+                                        i.material-icons(style="float:right") expand_more
                                     .collapsible-body
-                                        |Some random award
+                                        p
+                                            |The Cheryl Praeger Award is awarded to the resident of University Hall who has obtained the most outstanding academic record while living at the Hall for most of their degree.
                                 li
                                     .collapsible-header
                                         i.material-icons whatshot
-                                        | 1st Place Unearthed 2015
+                                        | 1st Place Unearthed Hackathon 2015
+                                        i.material-icons(style="float:right") expand_more
                                     .collapsible-body
-                                        |Solved Iluka's Problem
+                                        p
+                                            |Awarded first place in the Unearthed Resources Hackathon for developing an algorithm that located potential titanium deposits for Iluka Resources based on coastline structures.
+                                            br
+                                            a(href="http://www.miningmonthly.com/technology/software/give-it-to-the-brainiacs/")|Mining Monthly
+
                                         
-                    ul(id="staggered-awards3")
+                    ul.accordion-box(id="staggered-awards3")
                         li.stagger
                             .row
                                 .col.s6
@@ -199,13 +211,44 @@ html
                                 li
                                     .collapsible-header
                                         i.material-icons poll
-                                        | Best in Knowledge
+                                        | Best in Knowledge (Singapore Civil Defence Force)
+                                        i.material-icons(style="float:right") expand_more
                                     .collapsible-body
-                                        | This award is given to the trainee that achieves the highest score in the theory component at the end of the training. 
+                                        p
+                                            |This award is given to the trainee that achieves the highest score in the theory component at the end of the training. 
                                 li
                                     .collapsible-header
                                         i.material-icons airplay
-                                        | Overall Best Trainee
+                                        | Overall Best Trainee (Singapore Civil Defence Force)
+                                        i.material-icons(style="float:right") expand_more
                                     .collapsible-body
-                                        |Graduated from the Singapore Civil Defence Academy as the overall best firefighting trainee of the 2010/2011 cohort. The award is based on scores from physical assessments, theory assessments and final firefighting exercises
-                                
+                                        p
+                                            |Graduated from the Singapore Civil Defence Academy as the overall best firefighting trainee of the 2010/2011 cohort. The award is based on scores from physical assessments, theory assessments and final firefighting exercises
+    footer.brown.darken-3.white-text(style="padding-bottom:20%")
+        .container
+            .row.scrollspy(id="contact")
+                .col.s12(style="margin-bottom: 100px;")
+                    h2(class="header") Contact
+                    hr
+                    br
+                    br
+                    ul(id="staggered-contacts")
+                        li
+                            .col.s6.valign-wrapper.push-s1
+                                i(class="fa fa-linkedin-square fa-3x pad" aria-hidden="true")
+                                a(href="https://au.linkedin.com/in/ilyas-ridhuan-472471109" class="white-text")
+                                    | https://au.linkedin.com/in/ilyas-ridhuan
+                                    
+                            .col.s6.valign-wrapper.push-s1
+                                i(class="fa fa-at fa-3x pad" aria-hidden="true")
+                                a(href="#" class="white-text")
+                                    | ilyasridhuan@gmail.com
+                        
+                            .col.s6.valign-wrapper.push-s1
+                                i(class="fa fa-github-square fa-3x pad" aria-hidden="true")
+                                a(href="https://github.com/IlyasRidhuan" class="white-text")
+                                    | https://github.com/IlyasRidhuan
+                hr
+        .footer-copyright
+            .container
+                |Powered by Materialize, Jade, and Harp
